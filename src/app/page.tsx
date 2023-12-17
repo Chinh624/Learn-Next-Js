@@ -1,15 +1,13 @@
-import Image from 'next/image'
-import Facebook from './facebook/page';
-import Tiktok from './tiktok/page';
+import Link from 'next/link';
 
 export default function Home() {
   return (
     <>
     <li>
-      <a href='/facebook'>Facebook</a>
+      <Link href={'/facebook'}>Facebook</Link>
     </li>
     <li>     
-       <a href='/tiktok'>Tiktok</a>
+       <Link href={'/tiktok'}>Tiktok</Link>
       </li>
     </>
   )
